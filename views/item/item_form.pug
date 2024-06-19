@@ -1,0 +1,23 @@
+extends item_sidebar 
+
+block content
+  form(action="post") 
+    div
+      label(for='item-name') Name 
+      input#item-name(name='item-name')
+    div
+      label(for='item-des') Description 
+      input#item-des(name='item-des')
+    div
+      label(for='item-cate') Category  
+      input#item-cate(name='item-cate')
+    div
+      label(for='item-price') Price 
+      input#item-price(name='item-price')
+    div
+      label(for='item-instock') Instock (qty) 
+      input#item-instock(name='item-instock')
+    div
+      label(for='item-image') Image 
+      input#item-image(name='item-image')
+    button.submit-btn(type='submit') Submit

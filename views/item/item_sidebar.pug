@@ -1,0 +1,13 @@
+
+extends ../layout 
+
+block sidebar
+  ul.sidebar 
+    - const url = "/item";
+    li
+      a(href=(url + '/create')) Create item
+    li
+      a(href=(url + '/update')) Update item
+    li
+      a(href=(url + '/delete')) Delete item
+  block content
